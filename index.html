@@ -1,59 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>
-        Irina Bezgina DE
-    </title>
-    <!--<a href="https://github.com/IreneGladkaya/" target="_blank">
-        GitHub
-    </a>-->
+  <head>
+    <title>Irina Bezgina</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-</head>
-<body>
-    <div class="sidebar">
-        <div class="top">
-            <i class="material-icons" id="btn">menu</i>
-        </div>
-        <ul>
-            <li>
-                <a href="#">
-                    <span class="material-symbols-outlined">edit_note</span>
-                </a>
-                <span class="tooltip">Blog</span>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="material-symbols-outlined">work</span>
-                </a>
-                <span class="tooltip">Career</span>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="material-symbols-outlined">alternate_email</span>
-                </a>
-                <span class="tooltip">Contacts</span>
-            </li>
-        </ul>
-    </div>
 
-    <div class="main-content">
-        <div class="container">
-            <h1>Data Engineer</h1>
-        </div>
-    </div>
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-</body>
+  </head>
+  <body>
+      <nav class="sidebar close">
+          <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo.png" alt="logo">
+                </span>
+                <div class="text header-text">
+                    <span class="name">Irina Bezgina</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle' ></i>
+          </header>
 
-<script>
-    let btn = document.querySelector('#btn')
-    let sidebar = document.querySelector('.sidebar')
+          <div class="menu-bar">
+              <div class="menu">
+                <li class="search-box">
+                    <a href="#">
+                      <i class='bx bx-search icon' ></i>
+                      <input type="search" placeholder="Search...">
+                    </a>
+                </li>
+                  <ul class="menu-links">
+                      <li class="nav-link">
+                          <a href="#">
+                            <i class='bx bxs-user-detail icon' ></i>
+                            <span class="text nav-text">About</span>
+                          </a>
+                      </li>
+                      <li class="nav-link">
+                        <a href="#">
+                          <i class='bx bx-edit-alt icon' ></i>
+                          <span class="text nav-text">Blog</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-comment icon'></i>
+                          <span class="text nav-text">Contact</span>
+                        </a>
+                    </li>
+                        </a>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
 
-    btn.onClick = function() {
-        sedebar.classList.toggle('active');
-    };
-</script>
+      <script src="script.js"></script>
 
+  </body>
 </html>
