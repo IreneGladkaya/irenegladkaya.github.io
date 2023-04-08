@@ -4,7 +4,56 @@
     <title>
         Irina Bezgina DE
     </title>
-    <a href="https://github.com/IreneGladkaya/" target="_blank">
+    <!--<a href="https://github.com/IreneGladkaya/" target="_blank">
         GitHub
-    </a>
+    </a>-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
+<body>
+    <div class="sidebar">
+        <div class="top">
+            <i class="material-icons" id="btn">menu</i>
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                    <span class="material-symbols-outlined">edit_note</span>
+                </a>
+                <span class="tooltip">Blog</span>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="material-symbols-outlined">work</span>
+                </a>
+                <span class="tooltip">Career</span>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="material-symbols-outlined">alternate_email</span>
+                </a>
+                <span class="tooltip">Contacts</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>Data Engineer</h1>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onClick = function() {
+        sedebar.classList.toggle('active');
+    };
+</script>
+
+</html>
