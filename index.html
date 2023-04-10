@@ -8,6 +8,7 @@
 
     <!-- Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
   </head>
   <body>
@@ -24,23 +25,29 @@
             <i class='bx bx-chevron-right toggle' ></i>
           </header>
 
+          <!-- <div>
+            <a href="https://www.linkedin.com/in/irina-bezgina-515785181" class="fa fa-linkedin">
+                <i class="icon-linkedin"></i>
+              </a>
+          </div> -->
+
           <div class="menu-bar">
               <div class="menu">
                   <ul class="menu-links">
                       <li class="nav-link">
-                          <a href="#">
+                          <a href="#about">
                             <i class='bx bxs-user-detail icon' ></i>
                             <span class="text nav-text">About</span>
                           </a>
                       </li>
                       <li class="nav-link">
-                        <a href="#">
+                        <a href="#blog">
                           <i class='bx bx-edit-alt icon' ></i>
                           <span class="text nav-text">Blog</span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="#contact">
                             <i class='bx bx-comment icon'></i>
                           <span class="text nav-text">Contact</span>
                         </a>
@@ -52,8 +59,25 @@
           </div>
       </nav>
 
-      <section class="home">
+      <section class="home" id="about">
           <div class="text">About</div>
+          <span class="me">
+            <img src="imgs/Photo.jpg" alt="my_photo" align="left">
+            <p>
+              I'm Irina Bezgina. Experienced Data Engineer with more than 10 years of experience in analytics.
+              As someone who has spent the last decade working in analytics, I have seen firsthand the tremendous impact that data can have on businesses and organizations. In particular, my focus has been on the field of data engineering (DE), which involves the design, development, and maintenance of data pipelines and infrastructure.
+              Over the years, I have had the opportunity to work on a wide range of projects, from building large-scale data warehouses to designing real-time streaming pipelines. One of the most rewarding aspects of my job has been seeing how these systems can help organizations make better, more data-driven decisions.
+              </p>
+          </span>
+          
+      </section>
+
+      <section class="blog" id="blog">
+        <div class="text">Blog</div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="text">Contact</div>
       </section>
 
       <script src="script.js"></script>
